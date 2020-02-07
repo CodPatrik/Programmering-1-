@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        I taggen head läser webbläsaren in allt den behöver veta för att 
+        sedan kunna göra rätt när den läser alla taggar som finns inom body taggen
+    -->
+
+    <!-- 
+         <meta charset="UTF-8">
+         Ser till att rätt teckentolk används. Så att rätt tecken visas även Å Ä Ö 
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        Följande två taggar behöver ni i början inte fundera på 
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--
+        <title>Template</title>
+        Byt ut Template mot det namn ni önskar visa i fliken på Webbläsaren
+    -->
+    <title>Template</title>
+
+    <!--
+        <link rel="stylesheet" type="text/css" href=".\css\styles.css"> 
+        Kopplar ihop detta HTML dokument med en CSS fil som finns i ett 
+        underbilbliotek \CSS\ till det bibliotek som denna HTML fil finns 
+        som ni nu läser finns i och heter styles.css
+    -->
+    <link rel="stylesheet" type="text/css" href=".\css\styles.css">
+
+    <!--
+        <script type="text/javascript" src=".\js\script.js"></script> 
+        Kopplar ihop detta HTML dokument med en Javascript fil som finns i ett 
+        underbilbliotek \JS\ till det bibliotek som denna HTML fil finns 
+        som ni nu läser finns i och heter script.css
+    -->
+    <script type="text/javascript" src=".\js\script.js"></script>
+
+
+</head>
+
+<body>
+    <!--
+       <body> taggen är själva sidan = ett helt tomt blad som ni sedan 
+       fyller med taggar som ska göra olika saker
+   -->
+
+    <div id="ruta" onclick="runProgram()">
+        Text
+    </div>
+
+    <!--
+        Om man delar in <div> taggen ovan i olika bitar så betyder varje del som följer
+
+        id="ruta" 
+        
+        betyder att man har givit taggen <div> ett "personnummer" så man 
+        kan hitta just denna i datorns minne senare om man vill.
+        Man kan ha i princip hur många <div> taggar som helst och detta är ett sätt
+        att veta vilken som menas. 
+        Precis som vi är personer men har personnummer för att man ska veta att det är rätt person.
+
+    -->
+
+    <!--
+        onclick="runProgram()"
+
+        Detta är en möjlighet att ropa på ett program om någon klickar på denna <div> på sidan.
+        programmet som anropas är i detta fall en funktion som finns i filen script.js 
+
+    -->
+
+    <!--
+        Text
+
+        "Text" är det som kommer visas på webbsidan.
+         
+        
+    -->
+
+
+</body>
+
+</html>
+<!--Här slutar sidan-->
