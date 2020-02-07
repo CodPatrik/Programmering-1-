@@ -1,0 +1,19 @@
+Skapa ett bibliotek på er dator som heter code
+i vilket ni sedan kan lägga alla filer som kommer att 
+ha med programmeringen att göra.
+
+För att få lite ordning så är det lämpligt att strukturera
+i ytterligare underbibliotek till varje projekt/övning
+
+tex.
+\code\lektion_1\ här finns alla filer som vi gjorde på denna lektion.
+
+En bra struktur för ett projekt med html/Javascript/CSS är som följer.
+
+htmlfil.html
+\JS\script.js
+\CSS\style.css
+\Pictures\bild.jpg
+\Data\datafil.JSON
+
+
