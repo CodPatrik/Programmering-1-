@@ -1,0 +1,8 @@
+Vi kommer använda följande verktyg.
+Som Webbläsare använder vi FireFox som ni hittar på denna sida
+https://www.mozilla.org/sv-SE/firefox/new/
+
+Som IDE använder vi VisualStudioCode som återfinns i massor med youtube videos.
+https://code.visualstudio.com/
+
+Installera dessa i era datorer.
