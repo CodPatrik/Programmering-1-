@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <title>Primitiva typer</title>
+
+    <!--
+      <link rel="stylesheet" type="text/css" href=".\css\styles.css">
+    -->
+
+    <script type="text/javascript" src=".\js\script.js"></script>
+
+
+</head>
+
+<body>
+
+    <!--
+
+      Här kommer allt värt att veta om primitiva typer 
+       
+      // **** Variabeltyper/Datatyper ****
+
+        let name = "Patrik";  //String
+        let age = 30; // Integer
+        let age = 3.5; //float
+        let isApproved = false; //Boolean
+        let isApproved = true; //Boolean
+        let lastName = undefined;
+
+        let lastName = null;
+
+        //exempel på null
+        let color = null;  // först skall ingen färg vara vald
+        color = "red";  // sedan väljs en färg i detta fall röd
+        color = null;   // sedan tilldelas variablen ingenting = null 
+
+
+        // Objekt  enkel förklaring
+        // classer kommer vi gå igenom senare
+
+        //Tänk att vi har 3st variabler 
+        let name = "Patrik";  //String
+        let age = 30; // Integer
+        let length = 180; // Integer
+
+        // Dessa tre variabler beskriver något hos en och samma sak
+        // tex en person , personen kan ha ett namn och en ålder och en längd.
+        // Då skulle vi kunna säga att personen är ett objekt.
+        // Och samla alla variabler i ett "variabelnamn"
+
+        // Så här skapar man ett objekt med dessa tre variabler i objektet
+        let person = {
+            name = "Patrik",
+            age = 30,
+            length = 180
+        };
+
+        // Att läsa ett objekts "variabler" ,det heter egenskaper när det gäller objekt
+
+        let personAge = person.age;  // Här tilldelas variablen personAge värdet som finns i person.age och som är 30
+
+        //Att ändra värdet på ett objekts egenskap görs på detta vis.
+
+        person.age = 40;
+
+        // Skulle man här skriva ut detta i Konsollen 
+        // console.log(person.age)
+        // Skulle det synas siffran 40 i Konsollen
+
+
+        // Det finns en "variabel" till eller vad man ska kalla det för.
+        // Ett objekts alla egenskaper kan spars ner i ett annat format
+        // som heter JsonData.
+        // Det ser nästan ut som ett objekt.
+
+        let person = {
+            "name": "patrik",
+            "age": 30,
+            "length": 180
+        }
+
+        // Detta kommer vi till senare i kursen då detta är ett format som data oftast 
+        // sparas i eller skickas i mellan olika enheter o program.
+
+        // Ytterligare ett objekt som kan ses som en variabel som innehåller en hel lista med värden.
+        // En enkel lista kallas Array i javascript
+
+        let namnLista = ["Patrik", "Kalle", "Lisa", "Erik"];
+
+        console.log(namnLista[0]);  // Kommer skriva ut namnet Patrik 
+        console.log(namnLista[1]);  // Kommer skriva ut namnet Kalle
+
+
+
+
+
+        // En funktion kan oxå ses som en typ av "variabel" då den kan returnera ett värde
+
+        // Exempel på funktion som inte returnerar ett värde.
+        function greet1() {
+            console.log('Hello John');
+            console.log('Hello ' + 'John'); // Skriver Hello John i console.
+        }
+
+        greet1(); // anropar funktion greet1
+
+
+        function greet2(name) {
+            console.log('Hello ' + name); // Skriver Hello John i console.
+
+        }
+
+        greet2('John'); // anropar funktion greet2
+
+
+        function greet3(firstName, secondName) {
+            console.log(firstName + ' ' + secondName);
+
+        }
+
+        greet3('John', 'Smith'); //anropar funktion greet3
+
+        // Excempel på en funktion som returnerar ett värde till den som anropade den.
+
+        function calc(x, y) {
+
+            let summa = x + y;
+            return summa;
+
+            //samma som ovan men på ett annat sätt
+            // return x+y;
+
+        }
+
+        let total = calc(2, 3); // anropar funktion calc skickar med två värden som hamnar i 
+        // variabel x och y
+        // funktionen skickar tillbaka (returnerar) ett värde till anroparen
+        // i detta fall variablen total som tilldelas värdet 5
+
+        console.log(total);  // Om man skulle visa detta i konsoll så här så visas visar siffran 5.
+
+        // Samma som ovan men på ett annat sätt 
+        // Det går att förkorta anropet om man nu vill skriva ut detta i console tex.
+        // console.log(calc(2,3));
+        // Det finns en mängd förkortningar i kod som går att göra men för förståelse 
+        // används dom längre varianterna i kursens början.
+
+
+        // ******  Operander i javascript  ***********
+
+        let x = 10;
+        let y = 3;
+
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x * y);
+        console.log(x / y);
+        console.log(x % y);
+
+        // Öka värdet med 1
+
+        x++;  // samma som x=x+1;
+
+        x--;  // samma som x=x-1;
+
+        ++X;  // tilldelar värdet 1 innan operation utförs.  console.log(++x);
+
+        x++; // tilldelat värdet 1 efter operation utförts.   console.log(x++);
+
+
+        // Öka värdet med tex 5
+
+        x = x + 5;  // samma som   x+=5;
+
+        // Minska värdet med tex 6
+
+        x = x - 6;  // samma som  x-=6;
+
+        // x+=6
+        // x-=6
+        // x*=6
+        // x/=6
+
+        //Falsy värden
+        // false
+        // undefined
+        // null
+        // ''
+        // NaN
+
+
+        // Jämföra värden eller variabler.
+
+        let v = 3;
+        let z = 10;
+
+        console.log(v < z);  // z är större än v
+        console.log(v <= z); // z är större eller lika med v
+        console.log(v > z);  // z är mindre än v
+        console.log(v >= z); // z är mindre eller lika med v
+
+        console.log(v === z); // z är lika värde och samma datatyp
+
+        console.log(v !== z); // z är inte lika med   ! = Not
+
+        console.log(v == z); // z är lika med
+
+
+        //*** if sats **************************
+
+
+        let hour = 10;
+
+        if (hour >= 6 && hour < 12) {
+            console.log('hour är emellan 6 och 11');
+        }
+
+
+        if (hour > 6) {
+            console.log('Hour är större än 6');
+        }
+        else if (hour > 8) {
+            console.log('Hour är större än 8');
+        }
+        else {
+            console.log('inget av dom övre två stämmer');
+        }
+
+
+        // Logiska uttryck
+
+        // && = och (AND)
+        // || = eller (OR) 
+
+        // iställlet för if else om det är många att jämföra går det använda swich case;
+
+        let role;
+
+        switch (role) {
+
+            case 'guest':
+                console.log('Guest User');
+                break;
+            case 'moderator':
+                console.log('Moderator User');
+
+        }
+
+        // Ternary operator
+
+        let age = 20
+        let message = age >= 18 ? "Eligible" : "Not Eligible";
+        //message tilldelas "Eligible" om age >= 18 annars "Not Eligible"
+
+
+
+        // **** Loop ***************
+
+        // används istället för att behöva göra som nedan
+
+        let i = 0;
+        console.log(i);
+        i = i + 1;
+        console.log(i);
+        i = i + 1;
+        console.log(i);
+        i = i + 1;
+        console.log(i);
+        i = i + 1;
+        console.log(i);
+        i = i + 1;
+        console.log(i);
+
+
+
+        // Samma resultat kan uppnås genom att göra följande.
+
+        // Skapar en function vars uppgift är att visa ett värde i console 
+
+        function visaSumma(summa) {
+            console.log(summa);
+        }
+
+
+        // Här görs en loop som anropar funktionen visaSumma 5ggr.
+
+        for (let i = 0; i < 5; i++) {
+
+            // först tilldelas variabel i värdet 0
+            // sedan kollas så att variabel i är mindre än 5
+            // om det är så så utförs det som finns i kodblocket "loopen"
+            // sist ökas värdet på i med 1 
+
+
+            visaSumma(i); // anropar funktionen visaSumma och skickar med värdet på i 
+            // som tilldelas variabel summa i den funktionen.
+
+        }
+
+
+   -->
+
+</body>
+
+</html>

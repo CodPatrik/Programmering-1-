@@ -1,0 +1,20 @@
+
+/*
+
+I denna fil skriver man in alla recept som hör till någon HTML tagg
+och beskriver hur den ska se ut.
+
+Nedan är det ett recept som beskriver att <div> taggen med id = ruta 
+ska ha följande utseende.
+
+*/
+
+#ruta {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    cursor: pointer;
+}
