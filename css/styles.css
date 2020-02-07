@@ -1,0 +1,58 @@
+
+.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.buttonText {
+    position:absolute;
+    top:25px;
+    width:100%;
+    text-align: center;
+    cursor:pointer;
+}
+
+.buttonText:hover{
+    font-weight: bold;
+}
+
+#blueBox{
+    background-color: blue;
+    color: white;
+    
+}
+
+#redBox{
+    background-color: red;
+    color: green;
+}
+
+#greenBox{
+    background-color: green;
+    color: red;
+}
+
+#message{
+   position: fixed;
+   top:100px;
+   left:300px;
+
+   height:60px;
+   width:400px;
+
+   text-align: center;
+   padding:0px;
+   padding-top: 26px;
+
+   border: 1px;
+   border-style:solid;
+   border-color:#999999;
+   border-radius: 50px;
+
+   background-color: white;
+
+   color: white;
+   font-size: 20px;
+}
